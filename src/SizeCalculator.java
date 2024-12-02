@@ -1,21 +1,8 @@
-import java.io.File;
 import java.util.HashMap;
 
 public class SizeCalculator {
     private static char[] sizeMultipliers = {'B', 'K', 'M', 'G', 'T'};
     private static HashMap<Character, Integer> char2multipliers = getMultipliers();
-
-//    public static long getFolderSize(File folder) {
-//        if (folder.isFile()) { //Проверяем файл или папка. Если файл, то возвращаем размер.
-//            return folder.length(); //если папка, то идем дальше
-//        }
-//        long sum = 0;
-//        File[] files = folder.listFiles(); //получаем список файлов в папке, получаем их размер и суммируем
-//        for (File file : files) {
-//            sum += getFolderSize(file);
-//        }
-//        return sum; //получаем общий размер итоговой папки
-//    }
 
     public static String getHumanReadableSize(long size) {
         for (int i = 0; i < sizeMultipliers.length; i++) {

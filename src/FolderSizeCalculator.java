@@ -39,5 +39,4 @@ public class FolderSizeCalculator extends RecursiveTask<Long> {
         node.getSize();
         return sum;
     }
-
 }

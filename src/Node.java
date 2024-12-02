@@ -1,6 +1,5 @@
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Node {
     private File folder;
@@ -8,7 +7,6 @@ public class Node {
     private long size;
     private int level;
     private long limit;
-
 
     public Node(File folder, long limit) {
         this(folder);
@@ -64,6 +62,4 @@ public class Node {
     private void setLevel(int level) {
         this.level = level;
     }
-
-
 }
